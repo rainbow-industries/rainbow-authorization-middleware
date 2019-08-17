@@ -1,0 +1,14 @@
+name: rainbow-authorization-middleware
+organization: rainbow-industries
+version: 1.0.0
+elevator-pitch: Authorization middleware for the rainbow-service
+engine:
+    node: 12.0.0+
+commands:
+    test: node --no-warnings --experimental-modules ./es-modules/distributed-systems/section-tests/x/bin/run.js ./test/*.js
+npm-convert:
+dev-link:
+    - rainbow-authorization-client
+    - ../distributed-systems/section-tests
+    - ../distributed-systems/http2-server
+    - ../distributed-systems/http2-client
